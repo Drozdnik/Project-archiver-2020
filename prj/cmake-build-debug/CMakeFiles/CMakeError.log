@@ -1,0 +1,36 @@
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/Пользователь/Desktop/prj/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_0d5f2\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_0d5f2.dir\build.make /nologo -L                  CMakeFiles\cmTC_0d5f2.dir\build
+Building C object CMakeFiles/cmTC_0d5f2.dir/testCCompiler.c.obj
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1425~1.286\bin\Hostx86\x86\cl.exe @C:\Users\73B5~1\AppData\Local\Temp\nm1947.tmp
+testCCompiler.c
+Linking C executable cmTC_0d5f2.exe
+	"D:\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_0d5f2.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1425~1.286\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_0d5f2.dir\objects1.rsp @C:\Users\73B5~1\AppData\Local\Temp\nm19A6.tmp
+LINK Pass 1: command "C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1425~1.286\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_0d5f2.dir\objects1.rsp /out:cmTC_0d5f2.exe /implib:cmTC_0d5f2.lib /pdb:C:\Users\????????????\Desktop\prj\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_0d5f2.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_0d5f2.dir/intermediate.manifest CMakeFiles\cmTC_0d5f2.dir/manifest.res" failed (exit code 1201) with the following output:
+LINK : fatal error LNK1201: Ошибка при записи в базу данных "C:\Users\????????????\Desktop\prj\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_0d5f2.pdb" программы; возможно, не хватает места на диске, недопустимый путь или недостаточно прав
+NMAKE : fatal error U1077: "D:\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" : тючтЁр∙хээ√щ ъюф "0xffffffff"
+Stop.
+NMAKE : fatal error U1077: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x86\nmake.exe" : тючтЁр∙хээ√щ ъюф "0x2"
+Stop.
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/Пользователь/Desktop/prj/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake /nologo cmTC_33f5b\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_33f5b.dir\build.make /nologo -L                  CMakeFiles\cmTC_33f5b.dir\build
+Building C object CMakeFiles/cmTC_33f5b.dir/testCCompiler.c.obj
+	C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1425~1.286\bin\Hostx86\x86\cl.exe @C:\Users\73B5~1\AppData\Local\Temp\nmD0F.tmp
+testCCompiler.c
+Linking C executable cmTC_33f5b.exe
+	"D:\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_33f5b.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1425~1.286\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_33f5b.dir\objects1.rsp @C:\Users\73B5~1\AppData\Local\Temp\nmD5E.tmp
+LINK Pass 1: command "C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\1425~1.286\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_33f5b.dir\objects1.rsp /out:cmTC_33f5b.exe /implib:cmTC_33f5b.lib /pdb:C:\Users\????????????\Desktop\prj\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_33f5b.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_33f5b.dir/intermediate.manifest CMakeFiles\cmTC_33f5b.dir/manifest.res" failed (exit code 1201) with the following output:
+LINK : fatal error LNK1201: Ошибка при записи в базу данных "C:\Users\????????????\Desktop\prj\cmake-build-debug\CMakeFiles\CMakeTmp\cmTC_33f5b.pdb" программы; возможно, не хватает места на диске, недопустимый путь или недостаточно прав
+NMAKE : fatal error U1077: "D:\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" : тючтЁр∙хээ√щ ъюф "0xffffffff"
+Stop.
+NMAKE : fatal error U1077: "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x86\nmake.exe" : тючтЁр∙хээ√щ ъюф "0x2"
+Stop.
+
+
+
