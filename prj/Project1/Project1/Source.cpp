@@ -53,7 +53,7 @@ void BuildTable(Node* root)
 
 int main(int argc, char* argv[])
 {
-    ////// считаем частоты символов
+    
     ifstream f("1.txt", ios::out | ios::binary);
 
     map<char, int> m;
@@ -65,7 +65,7 @@ int main(int argc, char* argv[])
     }
 
 
-    ////// записываем начальные узлы в список list
+  
 
     list<Node*> t;
     for (map<char, int>::iterator itr = m.begin(); itr != m.end(); ++itr)
@@ -77,7 +77,7 @@ int main(int argc, char* argv[])
     }
 
 
-    //////  создаем дерево
+ 
 
     while (t.size() != 1)
     {
@@ -93,15 +93,15 @@ int main(int argc, char* argv[])
 
     }
 
-    Node* root = t.front();   //root - указатель на вершину дерева
+    Node* root = t.front();   
 
-////// создаем пары 'символ-код':
+
 
     BuildTable(root);
 
-    ////// ¬ыводим коды в файл output.txt
+  
 
-    f.clear(); f.seekg(0); // перемещаем указатель снова в начало файла
+    f.clear(); f.seekg(0); 
 
     ofstream g("output.txt", ios::out | ios::binary);
 
@@ -121,11 +121,10 @@ int main(int argc, char* argv[])
     f.close();
     g.close();
 
-    ///// считывание из файла output.txt и преобразование обратно
-
+   
     ifstream F("output.txt", ios::in | ios::binary);
 
-    setlocale(LC_ALL, "Russian"); // чтоб русские символы отображались в командной строке
+    setlocale(LC_ALL, "Russian"); 
 
     Node* p = root;
     count = 0; char byte;
@@ -142,6 +141,6 @@ int main(int argc, char* argv[])
     F.close();
 
     return 0;
-}//
+}
 
 
