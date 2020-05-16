@@ -4,4 +4,4 @@ project(prj)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(prj
-        moylubimiyproject.cpp)
+        Haffman.cpp)
