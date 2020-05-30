@@ -3,17 +3,17 @@ using namespace std; //
 class slovo /** @brief Class for input */
 {
 protected:
-    char p_c[100000]; // массив слова, можем большие текста вбивать /**Массив слова**/
-    int sm_num[100]; // массив, который считает колличество элементов 
-    char p_list[100];// массив, состовляющий. соответствие букв и колличества букв !
-    int len; // нули и единицы, задаём длинну строки
+    char p_c[100000]; 
+    int sm_num[100]; 
+    char p_list[100];
+    int len; 
 public:
-    slovo(char* x) // инициализация 
+    slovo(char* x) 
     {
         int i = 0;
-        while (x[i] != '\0') // с 14 по 18 
+        while (x[i] != '\0') 
         {
-            p_c[i] = x[i]; // каждому элементу присваиваем значение из вбитого
+            p_c[i] = x[i];
             i++;
         }
         p_c[i] = '\0';
@@ -29,7 +29,7 @@ public:
                 if ((p_c[i] == p_c[j]) and (j < i)) {
                     break;
                 }
-                p_list[y3] = p_c[i]; //инициализируем массив p_list 
+                p_list[y3] = p_c[i]; 
                 if (p_c[i] == p_c[j])
                 {
                     k++;
@@ -46,7 +46,7 @@ public:
             j = 0;
         }
         p_list[y3] = '\0';
-        {//сортировка чисел
+        {
             int j1 = 0;
             int i1 = 1;
             while (sm_num[j1] >= 0)
@@ -56,8 +56,8 @@ public:
                 {
                     if (sm_num[i1 - 1] > sm_num[i1])
                     {
-                        int vs; // Доп переменная, сортировка козырьком, меняем местами элементы, к левой части большее, 5 4 3 2 1
-                        int vs1; //
+                        int vs; 
+                        int vs1; 
                         vs = sm_num[i1];
                         vs1 = p_list[i1];
                         sm_num[i1] = sm_num[i1 - 1];
@@ -82,27 +82,27 @@ public:
             i++;
         }
         cout << endl;
-    }//вывод, не используем
+    }
 };
 class bintree : public slovo /** @brief Class for composing a binary tree. */
 {
 private:
-    int p[100][100];//тут хранятся коды всех символов 
-    int pos_2[100][100]; //сумма ; как выставлять 0 и 1; последовательность элементов для присваивания 0 и 1, [3, 1, 01]
-    int  pos_1[100];// позиции элементов в последовательности 
-    int  X[100];//запасной массив
-    int shifr[60000];//массив с шифром
-    char point[10000];//расшифровка
+    int p[100][100];
+    int pos_2[100][100]; 
+    int  pos_1[100];
+    int  X[100];
+    int shifr[60000];
+    char point[10000];
 public:
-    bintree(char* x) :slovo(x)// через : передаем полученное в класс слово
+    bintree(char* x) :slovo(x)
     {
-        int i = 0;// по основному массиву 
-        int u = sm_num[0];//два элемента
-        int b = 0;//для суммы 
-        int h = 0;// по элементам запасного массива 
+        int i = 0;
+        int u = sm_num[0];
+        int b = 0;
+        int h = 0;
         int g = 0;
         int q;
-        int pos_i = 0;//по элементам pos_2
+        int pos_i = 0;
         while (sm_num[g] > 0)
         {
             pos_1[g] = g;
@@ -115,9 +115,9 @@ public:
             X[g] = sm_num[g];
             g++;
         }
-        //вывод 
+        
         int i3 = 0;
-        while (X[i3] >= 0) // Х массив сумм
+        while (X[i3] >= 0) 
         {
             cout << X[i3] << " ";
             i3++;
@@ -136,7 +136,7 @@ public:
             if (X[1] < 0)break;
             if (pos_1[0] == -1 and pos_1[1] == -1)
             {
-                int i5 = 0;//дабы найти сумму
+                int i5 = 0;
                 int j5 = 1;
                 while (pos_2[i5][j5] >= 0)
                 {
@@ -173,7 +173,7 @@ public:
             }
             else if (pos_1[0] == -1)
             {
-                int i5 = 0;//дабы найти сумму
+                int i5 = 0;
                 int j5 = 0;
                 while (pos_2[i5][j5] >= 0)
                 {
@@ -190,7 +190,7 @@ public:
             }
             else if (pos_1[1] == -1)
             {
-                int i5 = 0;//дабы найти сумму
+                int i5 = 0;
                 int j5 = 0;
                 while (pos_2[i5][j5] >= 0)
                 {
@@ -219,7 +219,7 @@ public:
                 i2++;
             }
             i++;
-            //сортировка по позрастанию
+            
             int j1 = 0;
             int i1 = 1;
             while (X[j1] >= 0)
@@ -243,7 +243,7 @@ public:
                 i1 = 1;
                 j1++;
             }
-            //вывод 
+           
             int i3 = 0;
             while (X[i3] >= 0)
             {
@@ -260,7 +260,7 @@ public:
             }
             cout << endl;
         }
-        //выставление 0  и 1
+       
         i = 0;
         int j = 0;
         int summ = 0;
@@ -324,7 +324,7 @@ public:
             i++;
         }
     }
-    void shifr_m(void) /** @brief */
+    void shifr_m(void)
     {
         int i = 0;
         int j = 0;
